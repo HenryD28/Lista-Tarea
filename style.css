@@ -1,0 +1,154 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+
+}
+body {
+    margin: 0;
+    background-color: #0f172a;
+    color: #f8fafc;
+    height: 100vh;
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    
+    
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.input-container {
+    width: 70%;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+
+    
+}
+    
+#list {
+    padding: 0rem;
+    margin: 0 ;
+    background-color: #1d4ed8;
+    width: 100%;
+    border-radius: 1rem ;
+    max-height: 15rem;
+    overflow: auto;
+    
+    
+    
+    
+
+}
+
+.check{
+    text-decoration: line-through;
+    color: rgb(30, 139, 255);
+
+
+}
+
+#name-input {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    font-weight: 700;
+    color: #1e293b;
+}
+#form-btn {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    background-color: #60a5fa;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #1e293b;
+    cursor: pointer;
+}
+
+
+input {
+    outline: none;
+    
+}
+
+
+
+.info-text {
+    display: none;
+}
+
+.delete-icon {
+    width: 3rem;
+    cursor: pointer;
+    
+}
+
+.check-icon {
+    width: 3rem;
+    
+    background-color: #1d4ed8;
+    color: white;
+    cursor: pointer;
+}
+
+li {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    padding: 0.5rem;
+    word-break: break-all;
+}
+
+.text {
+    width: 70%;
+    margin: 1rem;
+}
+
+
+@media (min-width: 768px) {
+    .input-container {
+        width: 50%;
+        
+    }
+  
+    #list {
+        width: 70%;
+    }
+    .edit-icon {
+        width: 3rem;
+    }
+
+
+}
+
+
+@media (min-width: 1024px) {
+    .input-container {
+        width: 30%;
+    }
+    #list {
+        width: 50%;
+    
+    }
+
+}
